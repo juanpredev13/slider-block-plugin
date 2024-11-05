@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/image-slider",
+	"version": "0.1.0",
+	"title": "Image Slider",
+	"category": "media",
+	"icon": "images-alt2",
+	"description": "A professional image slider block",
+	"attributes": {
+		"images": {
+			"type": "array",
+			"default": []
+		},
+		"animationDuration": {
+			"type": "number",
+			"default": 5
+		},
+		"imagesToShow": {
+			"type": "number",
+			"default": 1
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "image-slider",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
